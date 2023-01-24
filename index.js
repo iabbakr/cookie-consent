@@ -28,12 +28,6 @@ consentForm.addEventListener('submit', function(e){
         Making the sale...`
     }, 1500)
     
-/*   
-Challenge: 
-1. Make the button that closes the modal disabled.
-2. Make that button become usable when the final 
-   modal message has been displayed to the user.
-*/ 
 
     setTimeout(function(){
         document.getElementById('modal-inner').innerHTML = `
@@ -43,6 +37,7 @@ Challenge:
             <img src="images/pirate.gif">
         </div>
     `
+    modalCloseBtn.disabled = false;
     }, 3000)
   
 }) 
